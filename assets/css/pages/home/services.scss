@@ -1,0 +1,18 @@
+.services{
+	background: #fff;
+	&__title{
+		color: #000;
+	}
+	&__item{
+		margin-top: 48px;
+		&-icon{
+			font-size: 64px;
+			font-weight: 400;
+			color: #f4623a ;
+			margin-bottom: 24px
+		}
+		&-text{
+			color: #6c757d ;
+		}
+	}
+}

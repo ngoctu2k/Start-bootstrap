@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none !important;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+input,button,textarea{
+	outline: none
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.page-padding{
+	padding: 128px 0;
+}
+.title-page{
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-align: center;
+}

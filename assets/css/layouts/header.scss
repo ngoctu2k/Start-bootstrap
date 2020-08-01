@@ -1,0 +1,82 @@
+.header {
+    display: block;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1000;
+    &.scroll{
+        background-color: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 74px;
+        &-list {
+            display: flex;
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                    transition: all .25s ease;
+            .menu-list-item {
+                .menu-list-link {
+                    color: rgba(255, 255, 255, 0.7);
+                    padding: 16px;
+                    font-weight: 700;
+                    font-size: 14.4px;
+                    display: inline-block;
+                    &:hover {
+                        color: #fff;
+                    }
+                    &.color {
+                        color: rgb(33, 37, 41);
+                        &:hover {
+                            color: #f4623a;
+                        }
+                    }
+                    &.active{
+                    	color: #f4623a;
+                    }
+                }
+            }
+            &.show{
+            	max-height: 100vh !important;
+            }
+        }
+        &-logo {
+            a {
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.7);
+                font-weight: 700;
+                &:hover {
+                    color: #fff;
+                }
+                &.color {
+                    color: rgb(33, 37, 41);
+                    &:hover {
+                        color: #f4623a;
+                    }
+                }
+            }
+        }
+        &-button {
+            color: rgba(0, 0, 0, 0.5);
+            padding: 0.25rem 0.75rem;
+            font-size: 30px;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.25rem;
+            display: none;
+        }
+    }
+}
