@@ -48,17 +48,39 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.page-padding {
-    padding: 128px 0;
-}
-.title-page {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-align: center;
-}
+
+
 /* ================== 2,Header css ==================*/
 .btn.rounded-45 {
     border-radius: 45px;
+}
+
+.size .size-minus, .size .size-plus {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.size .size-minus {
+    margin-right: 10px;
+}
+
+.size .size-plus {
+    margin-left: 10px;
+}
+
+.size .size-list {
+    padding: 5px;
+    border-radius: 45px
+}
+
+.size .size-item {
+    width: 30px;
+    text-align: center;
+    border-radius: 45px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.size .flex-1 {
+    flex: 1;
 }
