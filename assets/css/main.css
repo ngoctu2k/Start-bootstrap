@@ -51,24 +51,24 @@ input::-webkit-inner-spin-button {
 
 
 /* ================== 2,Header css ==================*/
-.btn.rounded-45 {
+.rounded-45 {
     border-radius: 45px;
 }
 
-.size .size-minus, .size .size-plus {
+.size .size-minus, .size .size-plus, .bold-minus, .bold-plus {
     font-size: 24px;
     cursor: pointer;
 }
 
-.size .size-minus {
+.size .size-minus, .bold .bold-minus {
     margin-right: 10px;
 }
 
-.size .size-plus {
+.size .size-plus, .bold .bold-plus {
     margin-left: 10px;
 }
 
-.size .size-list {
+.size .size-list, .bold .bold-list  {
     padding: 5px;
     border-radius: 45px
 }
@@ -83,4 +83,46 @@ input::-webkit-inner-spin-button {
 
 .size .flex-1 {
     flex: 1;
+}
+
+.bold .bold-list  {
+    height: 20px;
+}
+
+.bold .bold-item {
+    margin-bottom: -5px
+}
+
+.bold .progress {
+    height: 12px;
+    border-radius: 45px;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .size .size-item {
+        width: 22px;
+    }
+
+    .size .size-minus, .bold .bold-minus {
+        margin-right: 5px;
+    }
+
+    .size .size-plus, .bold .bold-plus {
+        margin-left: 5px;
+    }
+    
 }

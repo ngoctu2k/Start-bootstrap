@@ -37,5 +37,38 @@ $(document).ready(function() {
         return false;
     });
 
+    // Bold
+    const $bold = $("input[type=text][name=bold]");
+
+    const changeBold = function(action) {
+        let boldVal = parseInt($bold.val());
+
+        if (action == 'plus') {
+            if (boldVal == 3) return;
+            boldVal = boldVal + 1;
+            $bold.val(boldVal);
+        } else {
+            if (boldVal == 1) return;
+            boldVal = boldVal - 1
+            $bold.val(boldVal);
+        }
+
+        const $progressBarBold = $("#progress-bar-bold");
+        if (boldVal == 1) {
+            $progressBarBold.css("width", "0%");
+        } else if (boldVal == 2) {
+            $progressBarBold.css("width", "50%");
+        } else {
+            $progressBarBold.css("width", "100%");
+        }
+    }
+
+    $('.bold-minus').click(function() {
+        changeBold('minus');
+    });
+
+    $('.bold-plus').click(function() {
+        changeBold('plus');
+    });
 
 });
